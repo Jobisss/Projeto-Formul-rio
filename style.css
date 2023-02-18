@@ -1,6 +1,154 @@
-.texto > input{ display: block; margin: 20px 0px;}
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+*{
+    margin: 0px;
+}
+
+:root{
+    --cinza-escuro : #3B3936; 
+    --vermelho : #BD2A2E; 
+    --cinza-claro : #B2BEBF; 
+    --branco : white;
+    --cinza-medio : #889C9B; 
+    --cinza-esverdiado : #486966; 
+    
+}
+
+
+body{
+    background-color: var(--cinza-claro);
+}
+
+header{
+    background-color: var(--cinza-esverdiado);  
+    height: 100px;
+    text-align: center; 
+    color: var(--branco); 
+}
+
+header > h1{
+    font-family: 'Signika Negative', sans-serif;
+    padding: 20px 0px;
+}
+
+header > h1:hover{
+    font-size: 35px;
+}
+
+
+main{
+    background-color: var(--branco);
+    max-width: 900px;
+    min-width: 300px;
+    margin: 20px auto 0px auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px 1px var(--cinza-escuro);
+   
+}
+
+main h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--cinza-escuro);
+    margin-bottom: 40px;
+}
+
+
+.texto label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separar{
+    margin: 0px auto 20px 30%;
+    display: block;
+    
+}
+
+
+
+.separar input{
+    font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: var(--branco);
+  border: 2px solid var(--vermelho);
+  border-radius: 4px;
+}
+
+.separar select{
+    padding: 0.25em 0.5em;
+    font-size: 16px;
+    background-color: var(--branco);
+    border: 2px solid var(--vermelho);
+    border-radius: 4px;
+   
+}
+
+.texto > input{ display: inline; margin: 10px 0px;}
 
 .texto > input:last-child{margin: 20px 0px 60px 0px;}
 
 .texto > select{ display: block; margin: 20px 0px;}
+
+.sobremesa input[type="radio"]{
+   background-color: var(--vermelho);
+   font-size: 20px;
+   color: #BD2A2E;
+   width: 1.15em;
+   height: 1.15em;
+   border: 0.15em solid currentColor;
+   border-radius: 50%;
+   place-content: center;
+}
+
+.sobremesa label{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--cinza-escuro);
+}
+
+.saber input[type="checkbox"]{
+    background-color: var(--vermelho);
+    font-size: 20px;
+    color: #BD2A2E;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    place-content: center;
+ }
+ 
+ .saber label{
+     font-size: 20px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color: var(--cinza-escuro);
+ }
+
+ .separar input[type="submit"]{
+    transition: all 1s;
+    
+    
+ }
+
+ .separar input[type="submit"]:hover{
+    background-color: var(--cinza-claro);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 20px;
+    
+    
+ }
+
+
+
+
+
+
+
+
+
+
 
