@@ -1,154 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
-
-*{
-    margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 :root{
-    --cinza-escuro : #3B3936; 
-    --vermelho : #BD2A2E; 
-    --cinza-claro : #B2BEBF; 
-    --branco : white;
-    --cinza-medio : #889C9B; 
-    --cinza-esverdiado : #486966; 
-    
+    --cor-1 : #47E5BC;
+    --cor-2 : #81E4DA;
+    --cor-3 : #AECFDF;
+    --cor-4 : #9F9FAD;
+    --cor-5 : #93748A;
 }
 
-
-body{
-    background-color: var(--cinza-claro);
-}
-
-header{
-    background-color: var(--cinza-esverdiado);  
-    height: 100px;
-    text-align: center; 
-    color: var(--branco); 
-}
-
-header > h1{
-    font-family: 'Signika Negative', sans-serif;
-    padding: 20px 0px;
-}
-
-header > h1:hover{
-    font-size: 35px;
-}
-
-
-main{
-    background-color: var(--branco);
+.content{
+    background-color: var(--cor-3);
     max-width: 900px;
-    min-width: 300px;
-    margin: 20px auto 0px auto;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 2px 2px 5px 1px var(--cinza-escuro);
-   
+    height: 800px;
+    margin: auto;
+    border-radius: 80px;
+    padding: 70px;
+    
+
 }
 
-main h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+.content h1{
+    font-family: 'Quicksand', sans-serif;   
+    color: var(--cor-5);
     text-align: center;
-    color: var(--cinza-escuro);
-    margin-bottom: 40px;
 }
 
-
-.texto label{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.separar{
-    margin: 0px auto 20px 30%;
+.texto input{
     display: block;
-    
+    max-width: 600px;
+    min-width: 98.5%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    border: 3px solid var(--cor-5);
+    text-align: center;
 }
 
 
 
-.separar input{
-    font-size: 16px;
-  font-size: max(16px, 1em);
-  font-family: inherit;
-  padding: 0.25em 0.5em;
-  background-color: var(--branco);
-  border: 2px solid var(--vermelho);
-  border-radius: 4px;
+
+
+.texto select{
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0px 0px 20px 0px;
+    padding: 5px;
+    width:100%;
+    border-radius: 30px;
+    border: 3px solid var(--cor-5);
+    text-align: center;
 }
 
-.separar select{
-    padding: 0.25em 0.5em;
-    font-size: 16px;
-    background-color: var(--branco);
-    border: 2px solid var(--vermelho);
-    border-radius: 4px;
-   
+
+
+.texto  label{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    color: var(--cor-5);
+    margin: 10px;
+    font-size: 21px;
 }
 
-.texto > input{ display: inline; margin: 10px 0px;}
-
-.texto > input:last-child{margin: 20px 0px 60px 0px;}
-
-.texto > select{ display: block; margin: 20px 0px;}
-
-.sobremesa input[type="radio"]{
-   background-color: var(--vermelho);
-   font-size: 20px;
-   color: #BD2A2E;
-   width: 1.15em;
-   height: 1.15em;
-   border: 0.15em solid currentColor;
-   border-radius: 50%;
-   place-content: center;
+.radio{
+ display: flex;
+ justify-content: space-between;
 }
 
-.sobremesa label{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--cinza-escuro);
+.radio input{
+    appearance: none;
+    transition: 1s;
 }
 
-.saber input[type="checkbox"]{
-    background-color: var(--vermelho);
-    font-size: 20px;
-    color: #BD2A2E;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
+.radio input:before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border:4px solid var(--cor-5);
     border-radius: 50%;
-    place-content: center;
- }
- 
- .saber label{
-     font-size: 20px;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     color: var(--cinza-escuro);
- }
+}
 
- .separar input[type="submit"]{
-    transition: all 1s;
-    
-    
- }
+.radio input:hover:before{
+    transform:  scale(110%);
+}
 
- .separar input[type="submit"]:hover{
-    background-color: var(--cinza-claro);
-    color: var(--branco);
-    cursor: pointer;
-    font-size: 20px;
-    
-    
- }
+.radio input:checked:before{
+    content: "";
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-color: var(--cor-5);
+}
 
+.filho-radio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
+.filho-radio p{
+    margin: 0px 0px 0px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: var(--cor-5);
+}
 
